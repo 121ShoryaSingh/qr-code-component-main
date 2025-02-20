@@ -23,30 +23,28 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      :root {
+        overflow: hidden;
+        width: 100%;
+        min-height: 100%;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
       body {
         font-family: 'Outfit', sans-serif;
         background-color: hsl(212, 45%, 89%);
-      }
-
-      body {
-        overflow: hidden;
-        width: 100vw;
-        height: 100vh;
-      }
-
-      .text-wapper- {
-        height: 131px;
-        width: 288px;
-      }
-
-      .text-heading {
-        height: 52px;
-        width: 256px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
       .banner {
-        margin: auto;
         width: 320px;
         height: 499px;
         background-color: #fff;
@@ -55,8 +53,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 16px;
-        row-gap: 24px;
       }
 
       img {
@@ -66,13 +62,14 @@
         border-radius: 10px;
       }
 
-      .text-wapper {
+      .text-wrapper {
         width: 288px;
         height: 131px;
       }
 
       .qr-heading {
         text-align: center;
+        font-size: 23px;
       }
 
       .qr-desc {
@@ -82,7 +79,6 @@
         color: hsl(216, 15%, 48%);
         width: 256px;
         margin: auto;
-        
       }
 
       .attribution {
@@ -95,25 +91,23 @@
     </style>
   </head>
   <body>
-    <div>
-      <div class="banner">
-        <div>
-          <img
-            src="/images/image-qr-code.png"
-            alt=""
-          />
-        </div>
-        <div class="text-wrapper">
-          <h2 class="qr-heading">
-            Improve your front-end skills by building projects
-          </h2>
-          <p class="qr-desc">
-            Scan the QR code to visit Frontend Mentor and take your coding skills
-            to the next level
-          </p>
+    <div class="banner">
+      <div>
+        <img
+          src="/images/image-qr-code.png"
+          alt="QR Code"
+        />
+      </div>
+      <div class="text-wrapper">
+        <h2 class="qr-heading">
+          Improve your front-end skills by building projects
+        </h2>
+        <p class="qr-desc">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
       </div>
     </div>
-
     <div class="attribution">
       Challenge by
       <a
